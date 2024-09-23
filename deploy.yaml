@@ -1,0 +1,31 @@
+---
+version: "2.0"
+services:
+  my-portfolio:
+    image: rexayop/my-portfolio:0.0.1
+    expose:
+      - port: 80
+        as: 80
+        to:
+          - global: true
+profiles:
+  compute:
+    my-portfolio:
+      resources:
+        cpu:
+          units: 0.5
+        memory:
+          size: 512Mi
+        storage:
+          - size: 512Mi
+  placement:
+    dcloud:
+      pricing:
+        my-portfolio:
+          denom: uakt
+          amount: 10000
+deployment:
+  my-portfolio:
+    dcloud:
+      profile: my-portfolio
+      count: 1
