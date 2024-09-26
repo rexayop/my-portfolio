@@ -2,7 +2,7 @@
 
 Portfolio website written in HTML, CSS and JS.
 
-URI of website deployed on Akash: https://8hch8191j9ccp62754ivum269g.ingress.dal.leet.haus/
+URI of website deployed on Akash: https://c4kjabau5hf5v5llrdvqajdsuc.ingress.validatornode.com/
 
 Spotify integration: [Spotify-Readme](https://github.com/tthn0/Spotify-Readme)
 
